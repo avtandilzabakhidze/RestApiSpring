@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=rest
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_DB=bootcamp
+    ports:
+      - "54321:5432"
